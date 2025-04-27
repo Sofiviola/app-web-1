@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda Sofia - Ropa</title>
-    <!-- Bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ">
       <div
         class="container-fluid d-flex justify-content-between align-items-center"
       >
@@ -28,7 +29,7 @@
         </a>
 
         <!-- Categorías a la izquierda -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="/electronica.html">Electrónica</a>
@@ -62,6 +63,68 @@
     <div class="container text-center mt-5">
       <h1>Ropa</h1>
       <p>Aquí puedes encontrar productos ropa</p>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1718913931807-4da5b5dd27fa?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Producto 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                provident.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-danger fw-bold">$120.000</span>
+                <button class="btn btn-danger">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1718913931807-4da5b5dd27fa?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Producto 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                provident.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-danger fw-bold">$44.000</span>
+                <button class="btn btn-danger">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1718913931807-4da5b5dd27fa?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Producto 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                provident.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-danger fw-bold">$280.000</span>
+                <button class="btn btn-danger">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -70,8 +133,6 @@
         window.location.href = "login.html";
       }
     </script>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
