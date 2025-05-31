@@ -12,45 +12,58 @@
 
   </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div
-          class="container-fluid d-flex justify-content-between align-items-center"
-        >
-          <!-- Logo en el centro -->
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
-              alt="Tienda"
-              width="30"
-              height="30"
-              class="d-inline-block align-text-top"
-            />
-            Tienda Sofia
-          </a>
-  
-          <!-- Categorías a la izquierda -->
-          <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-            <ul id="nav-dinamico" class="navbar-nav mb-2 mb-lg-0"></ul>
+  <nav class="navbar navbar-expand-lg">
+    <div
+      class="container-fluid d-flex justify-content-between align-items-center"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+          alt="Tienda"
+          width="30"
+          height="30"
+          class="d-inline-block align-text-top"
+        />
+        Tienda Sofia
+      </a>
 
-          </div>
-  
-          <!-- Botón Logout a la derecha -->
-          <div class="d-flex">
-            <button class="btn btn-outline-danger" onclick="logout()">
-              Logout
-            </button>
-  
-            <button
-              class="navbar-toggler ms-2"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-      </nav>
+      <div
+        class="collapse navbar-collapse d-flex justify-content-center"
+        id="navbarNav"
+      >
+        <ul id="nav-dinamico" class="navbar-nav mb-2 mb-lg-0"></ul>
+        <a class="nav-link position-relative" href="carrito.html">
+          <img
+            src="https://www.pikpng.com/pngl/b/464-4646442_carrito-de-compras-carro-de-compras-blanco-clipart.png"
+            alt="Carrito"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top mx-4"
+          />
+          <!-- Burbuja con cantidad -->
+          <span
+            id="carrito-cantidad"
+            class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-danger"
+          >
+            0
+          </span>
+        </a>
+      </div>
+      <div class="d-flex">
+        <button class="btn btn-outline-danger" onclick="logout()">
+          Logout
+        </button>
+        <button
+          class="navbar-toggler ms-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
     <div class="container text-center mt-5">
         <h1>Electrónica</h1>
         <p>
