@@ -8,11 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
       <div
         class="container-fluid d-flex justify-content-between align-items-center"
       >
@@ -29,7 +28,10 @@
         </a>
 
         <!-- Categorías a la izquierda -->
-        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+        <div
+          class="collapse navbar-collapse d-flex justify-content-center"
+          id="navbarNav"
+        >
           <ul id="nav-dinamico" class="navbar-nav mb-2 mb-lg-0"></ul>
         </div>
 
@@ -53,12 +55,12 @@
     <div class="container text-center mt-5">
       <h1>Ropa</h1>
       <p>Aquí puedes encontrar productos ropa</p>
-      <div class="row mt-4">
+      <div class="row ropa mt-4">
         <!-- Aquí se insertarán las cards con JS -->
       </div>
     </div>
     <script src="./nav.js"></script>
-    <script src="./productosRopa.js"></script>
+    <script src="./productos.js"></script>
 
     <script>
       function logout() {
@@ -66,7 +68,9 @@
         window.location.href = "login.html";
       }
       cargarNavLinks();
-      renderizarProductosRopa();
+      obtenerProductos().then((productos) => {
+        renderizarProductosPorCategoria(productos, "ropa", ".row.ropa");
+      });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
