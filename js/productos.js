@@ -43,7 +43,7 @@ async function agregarAlCarrito(id) {
 
 async function obtenerProductos() {
   try {
-    const response = await fetch("./productos.json");
+    const response = await fetch("../assets/productos.json");
     if (!response.ok) throw new Error("Error al cargar los productos");
     const productos = await response.json();
     actualizarCantidadCarrito();

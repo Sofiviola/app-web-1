@@ -1,8 +1,8 @@
 const navItems = [
   { titulo: "Inicio", url: "index.html" },
-  { titulo: "Electrónica", url: "electronica.html" },
-  { titulo: "Hogar", url: "hogar.html" },
-  { titulo: "Ropa", url: "ropa.html" },
+  { titulo: "Electrónica", url: "/pages/electronica.html" },
+  { titulo: "Hogar", url: "/pages/hogar.html" },
+  { titulo: "Ropa", url: "/pages/ropa.html" },
 ];
 
 function cargarNavLinks() {
