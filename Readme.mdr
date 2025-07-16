@@ -1,3 +1,78 @@
-Trabajo Practico Aplicaciones web
-Sofia Viola
-Link del proyecto: https://app-web-1-brown.vercel.app/ 
+# 🧑‍💻 Trabajo Práctico - Aplicaciones Web
+
+**Autora:** Sofía Viola  
+**Link del proyecto:** [https://app-web-1-brown.vercel.app](https://app-web-1-brown.vercel.app)
+
+---
+
+## 📌 Roadmap de Trabajo
+
+### 🎯 Objetivo
+
+Desarrollar una tienda online funcional y organizada que permita al usuario:
+
+- Iniciar sesión.
+- Navegar por distintas categorías de productos.
+- Agregar ítems al carrito.
+- Ver el detalle de su compra.
+- Finalizar la experiencia de forma intuitiva y agradable.
+
+---
+
+### 🗂️ Fases del Proyecto
+
+#### 1. 🔧 Planificación Inicial
+- Definición de requerimientos funcionales (navegación, carrito, login).
+- Estructura general del proyecto.
+- Organización inicial en carpetas para favorecer la escalabilidad.
+
+#### 2. 🎨 Diseño del Prototipo Visual
+- Bocetado de vistas principales: login, inicio y carrito.
+- Elección de **Bootstrap** como framework de estilos.
+- Primeros ajustes visuales para lograr coherencia estética.
+
+#### 3. 📁 Estructura de Archivos
+
+/pages/ → HTML separados por vista
+/styles/ → Hoja de estilos CSS
+/js/ → JavaScript con funcionalidades separadas
+/assets/ → JSON de productos y recursos estáticos
+
+
+#### 4. ⚙️ Desarrollo de Funcionalidades
+- Login con `sessionStorage`.
+- Renderizado dinámico de navegación y productos.
+- Filtro por categoría.
+- Agregar al carrito con actualización dinámica y persistencia con `localStorage`.
+- Control de cantidad (suma/resta) antes de agregar.
+- Página de carrito con tabla, subtotal y botón de eliminar.
+
+#### 5. ✅ Testeo
+- Navegación y redirección entre páginas.
+- Persistencia del carrito tras recarga.
+- Validación al agregar/modificar/eliminar productos.
+- Pruebas cruzadas en diferentes navegadores.
+
+---
+
+## 💻 Tecnologías y Mejoras
+
+### Tecnologías utilizadas
+
+- **HTML5:** Estructura principal del sitio.
+- **CSS3 + Bootstrap:** Estilado responsive y moderno.
+- **JavaScript:** Lógica e interactividad.
+- **localStorage:** Almacenamiento de productos en el carrito.
+- **sessionStorage:** Datos del usuario en sesión.
+- **JSON local:** Simula base de datos para carga de productos.
+
+### Mejoras implementadas
+
+- Tarjetas, botones y tablas con diseño coherente.
+- Imágenes con proporciones correctas.
+- Espaciado uniforme y paleta de colores cuidada.
+- Posibilidad de **eliminar productos del carrito** de forma sencilla.
+
+---
+
+> ✨ Este proyecto busca ofrecer una experiencia de compra clara, moderna y funcional desde el lado del frontend.
